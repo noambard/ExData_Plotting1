@@ -9,5 +9,6 @@ png("plot3.png", width = 480, height = 480, units = "px")
 plot(electric$Sub_metering_1 ~ electric$DateTime, type = "l", ylab = "Energy sub metering", xlab = "")
 points(electric$Sub_metering_2 ~ electric$DateTime, type = "l", col = "red")
 points(electric$Sub_metering_3 ~ electric$DateTime, type = "l", col = "blue")
+legend("topright", col = c("black", "red", "blue"), pch = "-", legend = c("sub-metering 1", "sub-metering 2", "sub-metering 3"))
 #close the graphics device
 dev.off()
